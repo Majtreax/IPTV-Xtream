@@ -1,0 +1,64 @@
+name: iptv_xtream
+description: "Cross-Platform IPTV Streaming App."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+
+  # Networking
+  http: ^1.4.0
+  file_picker: ^8.0.3
+
+  # Video Player
+  media_kit: ^1.1.11
+  media_kit_video: ^1.2.5
+  media_kit_libs_android_video: ^1.3.6
+  media_kit_libs_windows_video: ^1.0.11
+  media_kit_libs_macos_video: ^1.1.4
+  media_kit_libs_video: ^1.0.7
+
+  # Storage
+  shared_preferences: ^2.5.0
+
+  # XML Parsing
+  xml: ^6.5.0
+
+  # Date Formatting
+  intl: ^0.20.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+  rename_app: ^1.6.6
+  rename: ^3.1.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#0D0614"
+  adaptive_icon_foreground: "assets/images/logo.png"
+  min_sdk_android: 21
+  windows:
+    generate: true
+    image_path: "assets/images/logo.png"
+    icon_size: 256
+  macos:
+    generate: true
+    image_path: "assets/images/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
